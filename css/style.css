@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body{
+    background-color: rgb(183, 211, 218);
+}
+
+.contenedor{
+    max-width: 100vw;
+    height: 100vh;
+    background-color: rgb(183, 211, 218);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tarjeta{
+    background-color: beige;
+    border-radius: 20px;
+    text-align: center;
+    width: 270px;
+    height: 440px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tarjeta > img{
+    border-radius: 10px;
+    margin-top: 20px;
+    width: 230px;
+    margin-bottom: 20px;
+}
+
+.subtarjeta{
+    width: 80%;
+}
+
+.text-1{
+    color: rgb(34, 34, 53);
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.text-2{
+    color: rgba(79, 85, 97, 0.671);
+    font-size: 15px;
+}
+
+@media (max-width:425px){
+    .tarjeta{
+        max-width: 80%;
+        height: 480px;
+        top: 90px;
+        padding: 13px;
+        padding-bottom: 58px;
+    }
+    .tarjeta>img{   
+        min-width: 90%;
+        margin-top: 6px;
+    }
+    .text-1{
+        font-size: 23px;
+        margin: 7px;
+    }
+    .descripcion{
+        position: relative;
+        width: 95%;
+        top: 16px;
+        left: 2.5%;
+    }
+    .text-2{
+        font-size: 17px;
+    }
+}
